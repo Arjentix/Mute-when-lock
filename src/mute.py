@@ -17,7 +17,6 @@ outputs = []
 
 def signal_handler(*args, **kwargs):
   global outputs
-  print(outputs)
 
   command = 'mute'
   # If unlocked
