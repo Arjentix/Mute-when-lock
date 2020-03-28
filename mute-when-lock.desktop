@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Mute then lock
-Comment=Mute sound then screen lock and unmute then unlock
+Name=Mute when lock
+Comment=Mute sound when screen lock and unmute when unlock
 GenericName=Internet Messenger
 Exec=/usr/bin/python3 /usr/local/bin/mute.py
 Type=Application
