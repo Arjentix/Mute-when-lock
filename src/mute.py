@@ -30,7 +30,7 @@ def signal_handler(*args, **kwargs):
     current_output = os.popen(get_current_output_cmd).read()
     outputs = os.popen(get_outputs_cmd).read().splitlines()
 
-  for output in outputs[::-1]: # Reversing to set the first one the current one
+  for output in outputs[::-1]:
     subprocess.call(['pacmd', 'set-card-profile', '0', output])
     subprocess.call(['amixer', 'set', 'Master', command])
   
@@ -40,8 +40,6 @@ def signal_handler(*args, **kwargs):
 if __name__ == '__main__':
   if len(sys.argv) > 1:
     outputs = sys.argv[1:]
-
-  print(outputs)
 
   DBusGMainLoop(set_as_default=True)
 
