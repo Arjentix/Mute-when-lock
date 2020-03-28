@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Mute then lock
+Comment=Mute sound then screen lock and unmute then unlock
+GenericName=Internet Messenger
+Exec=/usr/bin/python3 /usr/local/bin/mute.py
+Type=Application
+Categories=System;Sound
+Path=/usr/local/bin
