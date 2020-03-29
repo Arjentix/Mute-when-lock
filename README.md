@@ -34,7 +34,7 @@ So you can speed up this program by providing your typical audio-outputs:
 4. Change the `Exec` line in *mute-when-lock.desktop* file by providing your audio-outputs (from 2'nd step) as the arguments to the program. For example this is my `Exec` line:
 
    ```
-   Exec=/usr/bin/python3 /usr/local/bin/mute.py output:hdmi-stereo output:analog-stereo
+   Exec=/usr/bin/python3 /usr/local/bin/mute.py output:hdmi-stereo+input:analog-stereo output:analog-stereo
    ```
 
 > Also the first audio-output will be selected when session will be unlocked
